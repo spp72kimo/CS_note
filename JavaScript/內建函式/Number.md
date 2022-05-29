@@ -4,6 +4,7 @@
 - Number.parseInt("", 進位制)
 	- 將字串分析成指定進位制，再用十進位回傳
 	- 可以寫成parseInt()，也是 global function.
+	- [[parseInt( ,進位制)]]
 - parseFloat("");
 	- 將字串轉換為小數
 - Number.tofix(到第幾位)
