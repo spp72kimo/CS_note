@@ -1,6 +1,6 @@
 # Object 物件
 物件存取的方式有兩種：
-```
+```js
 var student = {
 	name: "Steven",
 	score: {

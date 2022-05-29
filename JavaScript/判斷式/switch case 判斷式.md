@@ -1,5 +1,5 @@
 # switch case 判斷式
-```
+```js
 var month = 3;
 
 switch(month) {
@@ -29,7 +29,7 @@ switch(month) {
 ```
 
 這種轉換月份的方式也可以用陣列的性質來做：
-```
+```js
 var month = 3;
 
 var trans = ["一月", "二月", "三月", "四月", "五月", "六月"];

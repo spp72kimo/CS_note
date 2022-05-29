@@ -3,7 +3,7 @@
 
 ---
 補充：
-```
+```js
 var c = "apple";
 var b = c / 2;
 console.log(b);    //  NaN
@@ -11,3 +11,5 @@ typeof(b);    //  Number
 ```
 
 NaN-> Not a Number
+
+#邏輯運算

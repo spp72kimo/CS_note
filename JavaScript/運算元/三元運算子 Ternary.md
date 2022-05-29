@@ -1,7 +1,7 @@
 # 三元運算子 Ternary
 
 判斷式 **?** *true(執行這裡)* **:** *false(執行這裡)*
-```
+```js
 var num = 3;
 
 num > 10 

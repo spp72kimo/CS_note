@@ -4,7 +4,7 @@
 所以當我們在存取 Object 變數的時候，Js 會先去看這個變數內所存放的 Object 的記憶體位置，再到那個位置讀取 Object 的值。
 
 所以如果我們做以下的操作：
-```
+```js
 var student = {
 	name: "Steven",
 	phone: "0947736272"
