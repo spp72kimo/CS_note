@@ -5,8 +5,8 @@
 ## Data type 的種類
 - Primitive
 	- boolean : true , [[false]] , 
-	- number : 不管是整數或是小樹都算 number
-	- string : 字串
+	- number : 不管是整數或是小樹都算 number  ( 內建函式可參考 [[Number]] )
+	- string : 字串  ( 內建函示可參考 [[String]] )
 
 - undefined : 變數沒有賦予值
 - object  #object 

@@ -57,6 +57,14 @@ console.log(sentence.split(" "));
 
 //  ["How", "are", "you?"]
 ```
+較常用在 CSV 檔案的逗號分隔
+```js
+var data = "data1, data2, data3, data4";
+var parseData = data.split(",");
+console.log(parseData);
+
+//  [ 'data1', ' data2', ' data3', ' data4' ]
+```
 ## String.trim()
 去除兩邊的空白
 ```js
@@ -77,5 +85,4 @@ for(var i = 0; i < name.length; i++) {
 //就會逐一取出每個字母
 ```
 
-
-
+#內建函式
