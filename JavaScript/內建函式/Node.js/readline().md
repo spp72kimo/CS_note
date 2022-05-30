@@ -62,3 +62,5 @@ rl.on("line", function(line) {
 #輸入輸出
 #input
 #stdin 
+
+參考文章：[Node.js用readline模組實現輸入輸出](https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/250824/)
