@@ -1,0 +1,2 @@
+**語法糖**（英語：Syntactic sugar）
+是由英國[電腦科學家](https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%AE%B6 "電腦科學家")[彼得·蘭丁](https://zh.wikipedia.org/wiki/%E5%BD%BC%E5%BE%97%C2%B7%E5%85%B0%E4%B8%81 "彼得·蘭丁")發明的一個術語，指[電腦語言](https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80 "電腦語言")中添加的某種語法，這種語法對語言的功能沒有影響，但是更方便[程式設計師](https://zh.wikipedia.org/wiki/%E7%A8%8B%E5%BA%8F%E5%91%98 "程式設計師")使用。語法糖讓程式更加簡潔，有更高的可讀性。

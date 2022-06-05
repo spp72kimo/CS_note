@@ -12,7 +12,8 @@ console.log(add(2, 3));
 // [Arguments] { '0': 2, '1': 3 }
 // 5
 ```
-由上面 console.log() 顯示出來，可以看出 arguments 是一個物件
+由上面 console.log() 顯示出來，可以看出 arguments 是一個物件，
+只是他的 property 是由 0 1 2 3... 來組成的！
 其實準確地說，是一個類陣列的物件 (array-like)
 所以也可以用 arguments.length() 來查看陣列的長度，藉此判定有幾個參數。
 關於 .length 可以參考[[Array 陣列]]
