@@ -10,7 +10,7 @@ const compareMax = require("./compare");
 
 describe("第一個群怎的測試", function(){
 	test("測試哪個數字比較大",function(){
-		expect(compareMax(10, 3),toBe(10));
+		expect(compareMax(10, 3)).toBe(10);
 	} );
 });
 ```
@@ -19,4 +19,15 @@ describe 是把測試單元群組化起來，
 test 就是測試一個單元，
 單元可以說是一個 function
 
+
+使用 jest 時，必須在 package.json 裡面加上，才能找到 node module 裡面的執行檔
+```JSON
+{  
+	"scripts": {  
+	"test": "jest"  
+	}  
+}
+```
+
+之後就可以在 CLI 輸入 `npm test 檔案名稱` 就可以了
 #jest 

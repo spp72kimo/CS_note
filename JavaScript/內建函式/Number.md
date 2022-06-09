@@ -10,7 +10,7 @@
 ## parseFloat("");
 將字串轉換為小數
 
-## Number.tofix(到第幾位)
+## Number.tofixed(到第幾位)
 傳回固定小數點位置的值，會做四捨五入
 
 ## Number.toString()
