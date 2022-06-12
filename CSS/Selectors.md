@@ -46,6 +46,21 @@ div {
 一個標籤可以有一個以上的 class 來做不同的設定
 也可以不同的標籤有相同的 class
 
+
+### attribute selector
+通常用在表單內的元素
+```css
+input[type="text"] {
+	color: red;
+}
+
+input[name="username"] {
+	color:green;
+}
+
+```
+
+
 ### 同時符合多個條件的 Selecrtor
 ```html
 <div class="big-head bg-color">
