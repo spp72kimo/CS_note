@@ -45,6 +45,9 @@ console.log("Hello Code!")
 圖片
 \! \[ 代表文字(非必填) \] \( 圖片網址\)
 
-![](https://cdn.hk01.com/di/media/images/dw/20200506/334738165506117633.jpeg/4T5PwW57j8sm343HmHjuD09guYke224Wg86niYPOp4k?v=w1920)
+也可以使用 \<img src="" width=""\> 來指定圖片大小
+
+<!-- ![](https://cdn.hk01.com/di/media/images/dw/20200506/334738165506117633.jpeg/4T5PwW57j8sm343HmHjuD09guYke224Wg86niYPOp4k?v=w1920) -->
+<img src="https://cdn.hk01.com/di/media/images/dw/20200506/334738165506117633.jpeg/4T5PwW57j8sm343HmHjuD09guYke224Wg86niYPOp4k?v=w1920" width="400px">
 
 #markdown
