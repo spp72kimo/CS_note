@@ -24,3 +24,4 @@ div.outerHTML = "<span>Hello!<span>"
 
 
 #DOM 
+其他 element 的 properties 可以參考 [[element 底下有的 properties]]

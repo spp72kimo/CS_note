@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>代辦事項清單</title>
+	<style>
+		/** {
+			border: 1px solid;
+		}*/
+		.mark {
+			text-decoration: line-through;
+			color: rgba(0,0,0,0.5);
+		}
+
+		.event {
+			width: 200px;
+		}
+		.date {
+			width: 100px;
+		}
+		.del {
+			width: 50px;
+		}
+		.content-date {
+			text-align: center;
+		}
+		.content-event {
+			border-left: 1px solid;
+			padding-left: 10px;
+		}
+		table {
+			border: 1px solid;
+		}
+		.table-header {
+			border: 2px solid;
+		}
+		.del_btn, .add_btn {
+			border-radius: 10px;
+			padding: 0 10px;
+			border: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>代辦事項清單</h1>
+	<label>日期：<input type="date" name="date" ></label>
+	<label>內容：<input type="text" name="event" ></label>
+	<button class='add_btn'>新增</button>
+	<br>
+	<br>
+	<div class='list'>
+		<table>
+			<tr>
+				<th class='date'>日期</th>
+				<th class='event'>事項</th>
+				<th>完成</th>
+				<th class='del'></th>
+			</tr>
+		</table>
+	</div>
+</body>
+<script>
+	document.querySelector('.add_btn').addEventListener('click',
+		function(e) {
+			let event = document.querySelector('input[name=event]').value || "";		
+			let date = document.querySelector('input[name=date]').value || "";
+			if(!(event && date)) {
+				alert("請輸入事項！")
+				return;
+			}
+
+			let tr = document.createElement('tr');
+			tr.innerHTML = 
+			`
+			<td class='content-date'>${date}</td>
+			<td class='content-event'>${event}</td>
+			<td><input type='checkbox' class='check'></td>
+			<td><button class='del_btn'>刪除</button></td>
+			`;
+
+			document.querySelector('table').appendChild(tr);
+		}
+	)
+
+	document.querySelector('table').addEventListener('click',
+		function(e) {
+			if(e.target.classList.contains('check')) {
+				e.target.closest('tr').children[1].classList.toggle('mark');
+			}
+
+			if(e.target.classList.contains('del_btn')) {
+				let tr = e.target.closest('tr');
+				document.querySelector('table').removeChild(tr);
+			}
+		}
+	)
+</script>
+</html>
