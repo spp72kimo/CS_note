@@ -35,7 +35,7 @@
 		.table-header {
 			border: 2px solid;
 		}
-		.del_btn, .add_btn {
+		button {
 			border-radius: 10px;
 			padding: 0 10px;
 			border: none;
@@ -62,6 +62,29 @@
 	</div>
 </body>
 <script>
+	function setTr(id, date, event) {
+		let tr = document.createElement('tr');
+		tr.setAttribute('data-id', id);
+		tr.innerHTML = `
+		<td class='content-date'>${date}</td>
+		<td class='content-event'>${event}</td>
+		<td><input type='checkbox' class='check'></td>
+		<td><button class='del_btn'>刪除</button></td>
+		`;
+		return tr;
+	}
+
+	// 從 local storage 取出之前的 list
+	let list= JSON.parse(window.localStorage.getItem('list')) || [];
+	for(let i=0; i<list.length; i++) {
+		let {id, date, event} = list[i];
+		let tr = setTr(id, date, event)
+		document.querySelector('table').appendChild(tr);
+	}
+	
+
+
+	// add event
 	document.querySelector('.add_btn').addEventListener('click',
 		function(e) {
 			let event = document.querySelector('input[name=event]').value || "";		
@@ -71,28 +94,44 @@
 				return;
 			}
 
-			let tr = document.createElement('tr');
-			tr.innerHTML = 
-			`
-			<td class='content-date'>${date}</td>
-			<td class='content-event'>${event}</td>
-			<td><input type='checkbox' class='check'></td>
-			<td><button class='del_btn'>刪除</button></td>
-			`;
+			let id = list.length===0 
+				? 1 
+				: list[list.length-1].id + 1;
 
+			let tr = setTr(id, date, event);
 			document.querySelector('table').appendChild(tr);
+
+			// 存進 local storage
+			list.push({id, date, event});
+			let parsedList = JSON.stringify(list);
+			window.localStorage.setItem('list',parsedList);
 		}
 	)
 
+
+	// event delegation
 	document.querySelector('table').addEventListener('click',
 		function(e) {
+
+			// 標記完成事件
 			if(e.target.classList.contains('check')) {
 				e.target.closest('tr').children[1].classList.toggle('mark');
 			}
 
+
+			// delete event
 			if(e.target.classList.contains('del_btn')) {
 				let tr = e.target.closest('tr');
+				let id = tr.getAttribute('data-id');
 				document.querySelector('table').removeChild(tr);
+				for(let i=0; i<list.length; i++) {
+					if(list[i].id === Number(id)) {
+						list.splice(i,1);
+					}
+				}
+				let parsedList = JSON.stringify(list);
+				window.localStorage.setItem('list', parsedList);
+
 			}
 		}
 	)
