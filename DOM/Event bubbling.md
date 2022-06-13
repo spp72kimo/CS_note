@@ -14,7 +14,7 @@
 事件會先經由 Capture Phase 往下捕獲，直到 Target 之後再往上 Bubbling 傳遞
 所以如果是在下層的元素觸發了 event ，上層的元素如果也有 eventListener 的話，就會連帶被觸發，這就是所謂的 Event Bubbling。
 
-ps. 我們可以利用這樣的 event flow 的特性來做所謂的[[事件代理]]
+ps. 我們可以利用這樣的 event flow 的特性來做所謂的[[事件代理 Event Delegation]]
 
 
 ---
