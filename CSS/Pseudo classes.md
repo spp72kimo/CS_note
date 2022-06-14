@@ -8,6 +8,7 @@ div:hover {
 ```
 
 ## :nth-child
+相對於 parent elements ，的第 n 個 child
 ```html
 <div>
 	<span>span1</span>
@@ -22,9 +23,16 @@ div span:nth-child(n) {
 	background: blue;
 }
 ```
-- :nth-child(1)：div 底下的第一個元素，又是 span 標籤的
-- :nth-child(2)：div 底下的第二個元素，又是 span 標籤的
-- :nth-child(2n)：div 底下是雙數的元素，又是 span 標籤的
-- :nth-child(3n)：div 底下第 3,6,9... 的元素，又是 span 標籤的
+- div span:nth-child(1)：在 div 底下，是 span 的第一個元素
+
+
+## :not(selector)
+選取不是特定標籤的元素
+```css
+:not(p) {
+	color: red;
+}
+```
+選取不是 p 的所有元素
 
 #CSS 

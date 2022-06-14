@@ -30,5 +30,9 @@ ex.線上音樂網站
 Server Side Render
 而要解決這樣的方法，就是當使用者第一次連進來這個網頁的時候，先由 server 端來進行 render ，之後再由前端的 Js 來做 render，這樣就可以保證程式碼可以擁有較完整的內容來讓搜尋引擎爬蟲。
 
+和 SSR 相反的是 [[CSR]]
+
 
 參考文章：[跟著小明一起搞懂技術名詞：MVC、SPA 與 SSR](https://hulitw.medium.com/introduction-mvc-spa-and-ssr-545c941669e9)
+
+#網路概論
