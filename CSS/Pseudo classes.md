@@ -35,4 +35,9 @@ div span:nth-child(n) {
 ```
 選取不是 p 的所有元素
 
+
+## :focus
+針對表單 input 框框如果被 focus 的時候，大部分預設會有 outline，
+可以設定 outline: none 就不會有預設的效果了。
+
 #CSS 

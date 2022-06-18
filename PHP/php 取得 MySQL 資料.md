@@ -3,7 +3,7 @@
 用 php 對 SQL 下指令
 這邊的 $conn 是 mysqli() 連線後的 instance
 
-### \$row = fetch.assoc($result) 
+### \$row = fetch_assoc($result) 
 取得每一列的回傳內容，可以用迴圈取出，如果沒有內容就回傳空值
 
 ex.
