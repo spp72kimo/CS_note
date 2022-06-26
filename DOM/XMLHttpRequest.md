@@ -3,11 +3,11 @@
 
 使用範例：
 ```js
-const request = XMLHttpRequest();
+const request = new XMLHttpRequest();
 
 request.onload = function() {
 	if(request.status >=200 && request.status < 400) {
-		console.log(resquest.responseText)
+		console.log(request.responseText)
 	} else {
 		console.log('error')
 	}	
@@ -18,7 +18,7 @@ request.onerror = function() {
 }
 
 request.open('GET', 'https://reqres.in/api/users', true);
-resquest.send();
+request.send();
 ```
 
 ### resquest.onload 
@@ -29,6 +29,21 @@ resquest.send();
 
 ### resquest.open() 
 來設置 request 的 method 和 url，第三個參數預設為 true (async)
+
+
+### request.setRequestHeader()
+如果要進行 post 來傳遞資料時，都要先在標頭宣告是用甚麼形式來傳遞資料， server 那邊才能夠辨識。
+```js
+request.setRequestHeader(
+
+        "Content-type",
+
+        "application/x-www-form-urlencoded"
+
+      );
+```
+#headers 
+
 
 #DOM 
 #request

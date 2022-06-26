@@ -8,7 +8,7 @@
 ## parentElement
 回傳父元素
 
-## innerHtml
+## innerHTML
 回傳整的內容的 html
 
 ## InnerText

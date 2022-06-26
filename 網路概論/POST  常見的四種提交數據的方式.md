@@ -25,6 +25,7 @@
 
 ### application/json
 現在很流行的傳送方式，類似 Js 的 Object 的格式，key: value 的方式
+可以參考：[[設定 header 回傳內容格式]]
 
 
 ### text/xml

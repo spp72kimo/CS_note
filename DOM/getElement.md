@@ -34,8 +34,11 @@ document.getElementById('id');
 document.querySelector("#id");
 document.querySelector(".post__data");
 document.querySelector("div p span");
-```
 
+//抓取 input 內的元素
+document.querySelector('input[type=text]');
+```
+可以用類似陣列的方式抓取表單的元素
 
 
 

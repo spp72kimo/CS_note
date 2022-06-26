@@ -26,3 +26,5 @@ Cookie 裡面的 SessionID 很像一個會員證，而用這個會員證就可�
 #網路概論 
 #request 
 #headers 
+#session
+#cookie

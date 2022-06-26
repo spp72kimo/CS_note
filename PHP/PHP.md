@@ -12,9 +12,10 @@
 7. 物件裡面的 method 和 attribute 用 -> 來表示
 	1. echo Object->name
 8. require(), require_once() 引入檔案
-9. header() 可用來設定 response 的 headers
+9. header() 可用來設定 response 的 headers  #headers  #cookie 
 	1. ex. `header("Location: index.html")`
-10. sprintf()：格式化字串
+10. setcookie(key, value, expire time) 用來設定 response 的 cookie 並且放進 headers裡   #headers 
+11. sprintf()：格式化字串
 	1.  %s 代替字串
 	2. %d 代替十進位數字
 	3. 用逗號隔開，之後的引數會順序帶入到前面的字串裡
